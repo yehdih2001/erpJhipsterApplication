@@ -11,7 +11,7 @@
     "uaaBaseName": "../uaa",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
-    "websocket": false,
+    "websocket": true,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
     "prodDatabaseType": "mariadb",
@@ -34,7 +34,7 @@
     "jhipsterVersion": "5.7.1",
     "jwtSecretKey": "NWQxZWU3ZDk0MTBiNzdjODNkM2RiODNkYTRkNTc4ZWUwMjNjYjkxNmMzNDMxNzcxZjY3MzhkNjE1OTg3Y2RlM2MzMzMzOWUzNDdmN2E5YTIwNjI1ZWE4YWE1NWM2ODkzNWRhNjhjZDM5ZTRlNWRhYWE4YmVmNDc1YWZiODdhOGY=",
     "otherModules": [],
-    "skipClient": true,
+    "skipClient": false,
     "skipUserManagement": true
   },
   "git-provider": "GitHub",
