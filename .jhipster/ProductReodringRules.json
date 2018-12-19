@@ -1,0 +1,53 @@
+{
+    "name": "ProductReodringRules",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "minimumQuantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "maximumQuantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quantityMultiple",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "leadTime",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "product",
+            "otherEntityName": "productInventoryView",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "productReodringRules"
+        }
+    ],
+    "changelogDate": "20181219005949",
+    "entityTableName": "product_reodring_rules",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "erpJhipsterApplication",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "erpJhipsterApplication"
+}

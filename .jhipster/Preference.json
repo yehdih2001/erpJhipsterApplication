@@ -1,0 +1,38 @@
+{
+    "name": "Preference",
+    "fields": [
+        {
+            "fieldName": "language",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "notification",
+            "fieldType": "NotificationManagement",
+            "fieldValues": "ByEmail,Internal"
+        },
+        {
+            "fieldName": "alias",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "signature",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181219005945",
+    "entityTableName": "preference",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "erpJhipsterApplication",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "erpJhipsterApplication"
+}
