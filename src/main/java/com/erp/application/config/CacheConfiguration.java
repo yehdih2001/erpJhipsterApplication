@@ -33,6 +33,16 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            cm.createCache(com.erp.application.domain.Compagny.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.AppUser.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.Preference.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.Erp.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.Erp.class.getName() + ".compagnies", jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.Erp.class.getName() + ".users", jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.Product.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.ProductInventoryView.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.ProductReodringRules.class.getName(), jcacheConfiguration);
+            cm.createCache(com.erp.application.domain.ProductCount.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

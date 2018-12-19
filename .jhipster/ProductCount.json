@@ -1,0 +1,42 @@
+{
+    "name": "ProductCount",
+    "fields": [
+        {
+            "fieldName": "onHand",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "purchased",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "forecasted",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "sold",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "product",
+            "otherEntityName": "productInventoryView",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "productCount"
+        }
+    ],
+    "changelogDate": "20181219005950",
+    "entityTableName": "product_count",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "erpJhipsterApplication",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "erpJhipsterApplication"
+}
